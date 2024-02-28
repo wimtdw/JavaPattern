@@ -32,7 +32,7 @@ public class Main {
         sortedByWeight.forEach(System.out::println);
         System.out.println("\nКонкатенация всех имен в одну строку:");
         String concatenatedNames = sortedByWeight.stream()
-                .map(Human::getFirstName)
+                .map(human -> human.getFirstName())
                 .collect(Collectors.joining(" "));
         System.out.println(concatenatedNames);
     }
