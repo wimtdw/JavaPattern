@@ -6,7 +6,7 @@ import java.util.concurrent.locks.ReentrantLock;
 
 public class ThreadSafeList<E> {
     private final List<E> list = new ArrayList<>();
-    private final Lock lock = new ReentrantLock(); // Инициализация ReentrantLock
+    private final Lock lock = new ReentrantLock();
 
     public void add(E element) {
         lock.lock();

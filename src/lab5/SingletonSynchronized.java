@@ -1,13 +1,13 @@
 package lab5;
 public class SingletonSynchronized {
-    private static SingletonSynchronized instance;
+    private static SingletonSynchronized INSTANCE;
 
     private SingletonSynchronized() {}
 
     public static synchronized SingletonSynchronized getInstance() {
-        if (instance == null) {
-            instance = new SingletonSynchronized();
+        if (INSTANCE == null) {
+            INSTANCE = new SingletonSynchronized();
         }
-        return instance;
+        return INSTANCE;
     }
 }

@@ -1,13 +1,13 @@
 package lab5;
 public class SingletonLazy {
-    private static SingletonLazy instance;
+    private static SingletonLazy INSTANCE;
 
     private SingletonLazy() {}
 
     public static SingletonLazy getInstance() {
-        if (instance == null) {
-            instance = new SingletonLazy();
+        if (INSTANCE == null) {
+            INSTANCE = new SingletonLazy();
         }
-        return instance;
+        return INSTANCE;
     }
 }
