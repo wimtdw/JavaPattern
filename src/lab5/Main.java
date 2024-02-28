@@ -5,11 +5,11 @@ public class Main {
 
         SingletonLazy lazySingleton = SingletonLazy.getInstance();
         SingletonSynchronized synchronizedSingleton = SingletonSynchronized.getInstance();
-        SingletonBillPugh billPughSingleton = SingletonBillPugh.getInstance();
+        SingletonEnum enumSingleton = SingletonEnum.INSTANCE.getInstance();
 
 
         System.out.println("Lazy Singleton: " + lazySingleton.hashCode());
         System.out.println("Synchronized Singleton: " + synchronizedSingleton.hashCode());
-        System.out.println("Bill Pugh Singleton: " + billPughSingleton.hashCode());
+        System.out.println("Enum Singleton: " + enumSingleton.hashCode());
     }
 }
