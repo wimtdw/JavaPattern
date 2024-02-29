@@ -10,6 +10,7 @@ public class Main {
 
             safeList.add("element1");
             safeList.add("element2");
+
             System.out.println("elements added");
         } catch (InterruptedException e) {
             e.printStackTrace();

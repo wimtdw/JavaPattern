@@ -5,7 +5,7 @@ import java.util.concurrent.Semaphore;
 
 public class ThreadSafeMap<K, V> {
     private final Map<K, V> map = new HashMap<>();
-    private final Semaphore semaphore = new Semaphore(1); // Инициализация семафора с одним разрешением
+    private final Semaphore semaphore = new Semaphore(1);
 
     public void put(K key, V value) throws InterruptedException {
         semaphore.acquire();
