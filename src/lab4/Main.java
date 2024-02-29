@@ -1,7 +1,7 @@
 package lab4;
 public class Main {
     public static void main(String[] args) {
-        CustomExecutorService executorService = new CustomExecutorService(3);
+        CustomExecutorService executorService = new CustomExecutorService(4);
 
         executorService.submit(() -> System.out.println("Task 1 executed"));
         executorService.submit(() -> System.out.println("Task 2 executed"));
