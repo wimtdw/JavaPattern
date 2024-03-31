@@ -1,11 +1,9 @@
 package lab7;
 
-// Шаг 1: Создаем интерфейс для моста
 interface Engine {
     void installEngine();
 }
 
-// Шаг 2: Создаем конкретные реализации для различных типов двигателей
 class GasolineEngine implements Engine {
     @Override
     public void installEngine() {
@@ -20,7 +18,6 @@ class ElectricEngine implements Engine {
     }
 }
 
-// Шаг 3: Создаем абстракцию
 abstract class Vehicle {
     protected Engine engine;
 
@@ -31,7 +28,6 @@ abstract class Vehicle {
     abstract void manufacture();
 }
 
-// Шаг 4: Создаем конкретные реализации транспортных средств
 class Car extends Vehicle {
     public Car(Engine engine) {
         super(engine);
@@ -56,7 +52,6 @@ class Motorcycle extends Vehicle {
     }
 }
 
-// Шаг 5: Используем паттерн Bridge
 class BridgePatternExample {
     public static void main(String[] args) {
         Engine gasolineEngine = new GasolineEngine();

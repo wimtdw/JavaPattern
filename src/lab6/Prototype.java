@@ -1,11 +1,9 @@
 package lab6;
 
-// Создаем интерфейс Прототипа
 interface Prototype {
     Prototype clone();
 }
 
-// Создаем конкретный класс, который реализует Прототип
 class ConcretePrototype implements Prototype {
     private int value;
 
@@ -27,7 +25,7 @@ class ConcretePrototype implements Prototype {
     }
 }
 
-// Пример использования шаблона
+
 class Test {
     public static void main(String[] args) {
         ConcretePrototype prototype = new ConcretePrototype(5);

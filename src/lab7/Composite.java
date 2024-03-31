@@ -22,8 +22,6 @@ class Leaf extends Component {
     }
 }
 
-
-
 class Composite extends Component {
     private List<Component> children = new ArrayList<>();
 

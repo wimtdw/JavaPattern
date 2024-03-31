@@ -38,8 +38,6 @@ class User {
         }
     }
 
-    // Геттеры для полей User
-
     public String getFirstName() {
         return firstName;
     }
@@ -62,7 +60,6 @@ class User {
                 .email("ivan@example.com")
                 .build();
 
-        // Использование объекта User
         System.out.println("User: " + user.getFirstName() + " " + user.getLastName());
         System.out.println("Age: " + user.getAge());
         System.out.println("Email: " + user.getEmail());
