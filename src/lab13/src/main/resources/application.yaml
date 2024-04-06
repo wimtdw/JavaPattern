@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: lab13
+
+student:
+  name: Ivan
+  last_name: Ivanov
+  group: IKBO
+
+
+
