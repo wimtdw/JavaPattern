@@ -1,0 +1,1 @@
+[Manufacture(id=1, name=1, address=À), Manufacture(id=2, name=1, address=À), Manufacture(id=3, name=1, address=À), Manufacture(id=7, name=100, address=B), Manufacture(id=8, name=200, address=C), Manufacture(id=9, name=d, address=1)]
